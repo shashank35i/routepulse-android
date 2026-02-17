@@ -1,7 +1,7 @@
 ﻿# RoutePulse Android
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/shashank35i/routepulse-android/master/app/src/main/res/drawable/logo.xml" width="140" alt="RoutePulse logo" />
+  <img src="https://raw.githubusercontent.com/shashank35i/routepulse-android/master/demos/routepulse_logo.png" width="420" alt="RoutePulse logo" />
 </div>
 
 <p align="center">
