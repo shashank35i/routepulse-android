@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/md_theme_light_background"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rate Your Experience"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:fontFamily="@font/poppins_bold"
+        android:layout_marginTop="32dp" />
+
+    <!-- Subtitle -->
+    <TextView
+        android:id="@+id/tvSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Help us improve our service"
+        android:textColor="#6E6E6E"
+        android:textSize="16sp"
+        android:fontFamily="@font/poppins_regular"
+        android:layout_marginTop="8dp" />
+
+    <!-- Star Rating -->
+    <LinearLayout
+        android:id="@+id/layoutStars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="24dp">
+
+        <ImageView
+            android:id="@+id/star1"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_star_outline"
+            android:layout_margin="4dp"
+            android:tag="1" />
+        <ImageView
+            android:id="@+id/star2"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_star_outline"
+            android:layout_margin="4dp"
+            android:tag="2" />
+        <ImageView
+            android:id="@+id/star3"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_star_outline"
+            android:layout_margin="4dp"
+            android:tag="3" />
+        <ImageView
+            android:id="@+id/star4"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_star_outline"
+            android:layout_margin="4dp"
+            android:tag="4" />
+        <ImageView
+            android:id="@+id/star5"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_star_outline"
+            android:layout_margin="4dp"
+            android:tag="5" />
+    </LinearLayout>
+
+    <!-- Feedback Input -->
+    <EditText
+        android:id="@+id/etFeedback"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:hint="Share your thoughts about our emergency alerts..."
+        android:gravity="top|start"
+        android:background="@drawable/edittext_background"
+        android:padding="12dp"
+        android:layout_marginTop="24dp"
+        android:textColor="#000000"
+        android:textColorHint="#A0A0A0"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="14sp" />
+
+    <!-- Submit Button -->
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Submit &amp; Exit"
+        android:textSize="16sp"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#E53935"
+        android:padding="12dp" />
+
+    <!-- Footer Text -->
+    <TextView
+        android:id="@+id/tvFooter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your feedback helps us serve you better"
+        android:textColor="#6E6E6E"
+        android:textSize="14sp"
+        android:fontFamily="@font/poppins_regular"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>

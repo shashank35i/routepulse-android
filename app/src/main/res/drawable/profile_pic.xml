@@ -1,0 +1,16 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background circle -->
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="#DDDDDD"/>
+            <!-- Optional: Add size to constrain the shape, but this is typically handled by the view -->
+            <size android:width="60dp" android:height="60dp"/>
+        </shape>
+    </item>
+    <!-- Profile icon -->
+    <item
+        android:drawable="@drawable/ic_profile"
+        android:gravity="center"
+        android:width="44dp"
+        android:height="44dp"/>
+</layer-list>

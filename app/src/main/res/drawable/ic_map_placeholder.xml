@@ -1,0 +1,32 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="300dp"
+    android:height="180dp"
+    android:viewportWidth="300"
+    android:viewportHeight="180">
+
+    <!-- Light gray background -->
+    <path
+        android:fillColor="#E0E0E0"
+        android:pathData="M0,0h300v180h-300z"/>
+
+    <!-- Grid lines -->
+    <path
+        android:strokeColor="#CCCCCC"
+        android:strokeWidth="1"
+        android:pathData="
+            M0,30h300
+            M0,60h300
+            M0,90h300
+            M0,120h300
+            M0,150h300
+            M60,0v180
+            M120,0v180
+            M180,0v180
+            M240,0v180"/>
+
+    <!-- Location pin icon -->
+    <path
+        android:fillColor="#B0BEC5"
+        android:pathData="M150,60c-11,0 -20,9 -20,20 0,15 20,40 20,40s20,-25 20,-40c0,-11 -9,-20 -20,-20z"/>
+
+</vector>

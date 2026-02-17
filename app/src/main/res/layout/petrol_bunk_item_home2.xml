@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="#F7F8FA"
+    android:padding="12dp"
+    android:layout_marginBottom="4dp"
+
+    android:gravity="center_vertical"
+    android:clipToOutline="true">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_gas_station"
+        app:tint="#4CAF50"
+        android:layout_marginEnd="8dp"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shell Station"
+            android:textSize="14sp"
+            android:textColor="#000000"
+            android:fontFamily="@font/poppins_medium"/>
+
+        <TextView
+            android:id="@+id/vicinity_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="123 Main St"
+            android:textSize="12sp"
+            android:textColor="#555555"
+            android:layout_marginTop="2dp"
+            android:fontFamily="@font/poppins_regular"/>
+
+        <TextView
+            android:id="@+id/distance_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1.0 mi"
+            android:textSize="12sp"
+            android:textColor="#555555"
+            android:layout_marginTop="2dp"
+            android:fontFamily="@font/poppins_regular"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/status_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Open 24/7"
+        android:textSize="12sp"
+        android:textColor="#4CAF50"
+        android:fontFamily="@font/poppins_regular"/>
+</LinearLayout>

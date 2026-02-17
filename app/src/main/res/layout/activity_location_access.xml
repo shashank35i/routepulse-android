@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/location_permission_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_theme_light_background"
+    android:padding="24dp">
+
+    <ImageView
+        android:id="@+id/icon_location"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:background="@drawable/locationback"
+        android:layout_marginTop="32dp"
+        android:padding="15dp"
+        android:src="@drawable/ic_location"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Location Access Required"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/md_theme_light_onSurface"
+        android:fontFamily="@font/poppins_bold"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/icon_location"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="RoutePulse needs access to your location to:"
+        android:textSize="16sp"
+        android:textColor="@color/md_theme_light_onSurfaceVariant"
+        android:fontFamily="@font/poppins_regular"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/item1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/subtitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_alert" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Send emergency alerts in heavy traffic"
+            android:textSize="16sp"
+            android:textColor="@color/md_theme_light_onSurface"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/item2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/item1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_traffic" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Monitor real-time traffic conditions"
+            android:textSize="16sp"
+            android:textColor="@color/md_theme_light_onSurface"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/item3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/item2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_gas_station"
+            app:tint="#FF2196F3" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Find nearby petrol stations"
+            android:textSize="16sp"
+            android:textColor="@color/md_theme_light_onSurface"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/warning"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Without location access, we cannot provide traffic alerts or find nearby petrol stations."
+        android:textSize="15sp"
+        android:textColor="@color/rp_coral"
+        android:background="@color/rp_sky"
+        android:fontFamily="@font/poppins_regular"
+        android:paddingVertical="12dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/item3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_allow"
+        style="@style/RoutePulse.Button.Primary"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:text="Allow Now"
+        android:layout_marginTop="24dp"
+        
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppins_medium"
+        
+        app:layout_constraintTop_toBottomOf="@id/warning"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_settings"
+        style="@style/RoutePulse.Button.Outlined"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Go to Settings"
+        android:layout_marginTop="12dp"
+        
+        android:textColor="@color/rp_teal"
+        android:fontFamily="@font/poppins_medium"
+        
+        android:paddingVertical="12dp"
+        
+        app:layout_constraintTop_toBottomOf="@id/button_allow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/footer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="You can change this setting at any time in your device settings"
+        android:textSize="14sp"
+        android:textColor="@color/md_theme_light_onSurfaceVariant"
+        android:fontFamily="@font/poppins_regular"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/button_settings"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

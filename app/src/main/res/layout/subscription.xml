@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  New modern onboarding subscription layout (hardcoded colors)
+  Place this file as: res/layout/activity_onboarding_subscription_new.xml
+  Requires androidx.cardview:cardview and Material components for MaterialButton (optional).
+-->
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="@drawable/bg_gradient">
+
+    <!-- top status / spacer -->
+    <View
+        android:id="@+id/topSpacer"
+        android:layout_width="0dp"
+        android:layout_height="18dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Center card -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="12dp"
+        app:cardUseCompatPadding="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:layout_constraintTop_toBottomOf="@id/topSpacer"
+        app:layout_constraintBottom_toTopOf="@+id/actionContainer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/md_theme_light_surface">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="22dp">
+
+            <!-- circular illustration background -->
+            <FrameLayout
+                android:id="@+id/illusFrame"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:background="@drawable/illu_circle"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="6dp">
+
+                <ImageView
+                    android:id="@+id/ivIllustration"
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/logo"
+                    android:contentDescription="Subscription icon" />
+            </FrameLayout>
+
+            <!-- Headline -->
+            <TextView
+                android:id="@+id/tvHeadline"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Upgrade to Premium"
+                android:textSize="22sp"
+
+                android:letterSpacing="0.01"
+                android:textColor="#0D1333"
+                android:gravity="center"
+                app:layout_constraintTop_toBottomOf="@id/illusFrame"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="16dp"/>
+
+            <!-- Subtext -->
+            <TextView
+                android:id="@+id/tvSub"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Real-time heavy-traffic alerts • Hospital priority routing • Fuel station filters — ad-free"
+                android:textSize="14sp"
+                android:textColor="#4B5268"
+                android:gravity="center"
+                android:lineSpacingExtra="2dp"
+                app:layout_constraintTop_toBottomOf="@id/tvHeadline"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="10dp"/>
+
+            <!-- Feature chips (two-column flow simulated by vertical layout) -->
+            <LinearLayout
+                android:id="@+id/features"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@id/tvSub"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="18dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:padding="6dp">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_check"
+                        android:contentDescription=""
+                        app:tint="#2E7D32" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Priority traffic routing"
+                        android:textColor="#374151"
+                        android:textSize="14sp"
+                        android:layout_marginStart="10dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:padding="6dp">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_check"
+                        android:contentDescription=""
+                        app:tint="#2E7D32" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Nearby hospitals &amp; fast routing"
+                        android:textColor="#374151"
+                        android:textSize="14sp"
+                        android:layout_marginStart="10dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:padding="6dp">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_check"
+                        android:contentDescription=""
+                        app:tint="#2E7D32" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Ad-free &amp; instant updates"
+                        android:textColor="#374151"
+                        android:textSize="14sp"
+                        android:layout_marginStart="10dp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Price bubble -->
+            <TextView
+                android:id="@+id/tvPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="• Cancel anytime"
+                android:textSize="12sp"
+
+                android:textColor="#FF8F00"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+
+                android:paddingBottom="0dp"
+
+                app:layout_constraintTop_toBottomOf="@id/features"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="14dp"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Action area -->
+    <LinearLayout
+        android:id="@+id/actionContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Primary subscribe button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSubscribe"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Subscribe Now"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+
+            android:background="@drawable/btn_primary_gradient"
+            android:textColor="@color/white"
+            android:stateListAnimator="@null"
+
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Secondary 'Maybe later' text button -->
+        <TextView
+            android:id="@+id/btnMaybeLater"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Maybe later"
+            android:textSize="15sp"
+            android:textColor="#1565C0"
+            android:gravity="center"
+            android:padding="8dp"
+            android:clickable="true"
+            android:focusable="true" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

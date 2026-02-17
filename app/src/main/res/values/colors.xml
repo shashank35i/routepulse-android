@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="rp_navy">#0F2D3D</color>
+    <color name="rp_navy_dark">#0A1E29</color>
+    <color name="rp_teal">#19B6A7</color>
+    <color name="rp_teal_dark">#0E8B80</color>
+    <color name="rp_amber">#F59E0B</color>
+    <color name="rp_coral">#F26B5E</color>
+    <color name="rp_sky">#E6F6F4</color>
+    <color name="rp_surface">#F5F7FA</color>
+    <color name="rp_surface_dark">#111827</color>
+    <color name="rp_surface_alt">#ECF2F6</color>
+    <color name="rp_on_surface">#0B1B24</color>
+    <color name="rp_on_surface_dark">#E5E7EB</color>
+    <color name="rp_outline">#D0D7DE</color>
+    <color name="rp_outline_dark">#374151</color>
+    <color name="rp_success">#10B981</color>
+    <color name="rp_error">#EF4444</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+
+    <!-- Material 3 Light -->
+    <color name="md_theme_light_primary">@color/rp_navy</color>
+    <color name="md_theme_light_onPrimary">@color/white</color>
+    <color name="md_theme_light_primaryContainer">#D7E8F1</color>
+    <color name="md_theme_light_onPrimaryContainer">#0A1E29</color>
+    <color name="md_theme_light_secondary">@color/rp_teal</color>
+    <color name="md_theme_light_onSecondary">@color/white</color>
+    <color name="md_theme_light_secondaryContainer">#CFF3EE</color>
+    <color name="md_theme_light_onSecondaryContainer">#083B36</color>
+    <color name="md_theme_light_tertiary">@color/rp_amber</color>
+    <color name="md_theme_light_onTertiary">#3D2A00</color>
+    <color name="md_theme_light_tertiaryContainer">#FFE0B2</color>
+    <color name="md_theme_light_onTertiaryContainer">#3A2500</color>
+    <color name="md_theme_light_error">@color/rp_error</color>
+    <color name="md_theme_light_onError">@color/white</color>
+    <color name="md_theme_light_errorContainer">#FEE2E2</color>
+    <color name="md_theme_light_onErrorContainer">#5F0F0F</color>
+    <color name="md_theme_light_background">@color/rp_surface</color>
+    <color name="md_theme_light_onBackground">@color/rp_on_surface</color>
+    <color name="md_theme_light_surface">@color/white</color>
+    <color name="md_theme_light_onSurface">@color/rp_on_surface</color>
+    <color name="md_theme_light_surfaceVariant">@color/rp_surface_alt</color>
+    <color name="md_theme_light_onSurfaceVariant">#334155</color>
+    <color name="md_theme_light_outline">@color/rp_outline</color>
+    <color name="md_theme_light_shadow">#12000000</color>
+
+    <!-- Material 3 Dark -->
+    <color name="md_theme_dark_primary">#8CC1D8</color>
+    <color name="md_theme_dark_onPrimary">#0A1E29</color>
+    <color name="md_theme_dark_primaryContainer">#143546</color>
+    <color name="md_theme_dark_onPrimaryContainer">#D7E8F1</color>
+    <color name="md_theme_dark_secondary">#5BD0C2</color>
+    <color name="md_theme_dark_onSecondary">#062D29</color>
+    <color name="md_theme_dark_secondaryContainer">#0B3A36</color>
+    <color name="md_theme_dark_onSecondaryContainer">#CFF3EE</color>
+    <color name="md_theme_dark_tertiary">#F3B74B</color>
+    <color name="md_theme_dark_onTertiary">#2B1A00</color>
+    <color name="md_theme_dark_tertiaryContainer">#4A3200</color>
+    <color name="md_theme_dark_onTertiaryContainer">#FFE0B2</color>
+    <color name="md_theme_dark_error">#FCA5A5</color>
+    <color name="md_theme_dark_onError">#3B0A0A</color>
+    <color name="md_theme_dark_errorContainer">#5F0F0F</color>
+    <color name="md_theme_dark_onErrorContainer">#FEE2E2</color>
+    <color name="md_theme_dark_background">@color/rp_surface_dark</color>
+    <color name="md_theme_dark_onBackground">@color/rp_on_surface_dark</color>
+    <color name="md_theme_dark_surface">#0B1220</color>
+    <color name="md_theme_dark_onSurface">@color/rp_on_surface_dark</color>
+    <color name="md_theme_dark_surfaceVariant">#1F2A37</color>
+    <color name="md_theme_dark_onSurfaceVariant">#CBD5E1</color>
+    <color name="md_theme_dark_outline">@color/rp_outline_dark</color>
+    <color name="md_theme_dark_shadow">#33000000</color>
+
+    <!-- Legacy references used in layouts -->
+    <color name="nav_active">@color/rp_teal</color>
+    <color name="nav_inactive">#94A3B8</color>
+    <color name="blue">@color/rp_teal</color>
+    <color name="bg_color">@color/rp_surface</color>
+    <color name="text_primary">@color/rp_on_surface</color>
+    <color name="text_secondary">#64748B</color>
+    <color name="button_color">@color/rp_navy</color>
+    <color name="button_text_color">@color/white</color>
+</resources>
