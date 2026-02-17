@@ -219,7 +219,7 @@ Core entities:
 
 ## Security Notes
 
-- Never commit real production keys in public repos
+- Never commit real production keys in public repos (the `google-services.json` in this repo is a placeholder)
 - Use restricted API keys in Google Cloud Console
 
 ---
