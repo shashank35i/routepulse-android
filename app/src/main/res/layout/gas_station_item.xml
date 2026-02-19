@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="14sp"
-        android:textColor="#000000"
+        android:textColor="?attr/colorOnSurface"
         android:fontFamily="@font/poppins_regular"
         android:padding="4dp"/>
 </LinearLayout>

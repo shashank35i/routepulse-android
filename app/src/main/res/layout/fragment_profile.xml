@@ -2,7 +2,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/md_theme_light_surface">
+    android:background="?attr/colorSurface">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -27,7 +27,7 @@
                 android:layout_gravity="bottom|end"
                 android:layout_margin="4dp"
                 android:src="@drawable/ic_camera"
-                app:tint="@color/blue" />
+                app:tint="?attr/colorPrimary" />
         </FrameLayout>
         <!-- Name & Email -->
         <TextView
@@ -37,7 +37,7 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="16dp"
             android:text="John Smith"
-            android:textColor="#000000"
+            android:textColor="?attr/colorOnSurface"
             android:textSize="20sp"
             android:fontFamily="@font/poppins_bold" />
         <TextView
@@ -47,7 +47,7 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="4dp"
             android:text="john.smith@email.com"
-            android:textColor="#666666"
+            android:textColor="?attr/colorOnSurfaceVariant"
             android:textSize="14sp"
             android:fontFamily="@font/poppins_regular" />
         <!-- Personal Info Section -->
@@ -62,7 +62,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Personal Information"
-                android:textColor="#000000"
+                android:textColor="?attr/colorOnSurface"
                 android:textSize="16sp"
                 android:fontFamily="@font/poppins_medium"
                 android:layout_marginBottom="8dp" />
@@ -78,24 +78,24 @@
                     android:layout_width="24dp"
                     android:layout_height="24dp"
                     android:src="@drawable/ic_profile"
-                    app:tint="@color/blue" />
+                    app:tint="?attr/colorPrimary" />
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:layout_marginStart="12dp"
                     android:text="Edit Profile"
-                    android:textColor="#000000"
+                    android:textColor="?attr/colorOnSurface"
                     android:textSize="14sp"
                     android:fontFamily="@font/poppins_regular" />
                 <ImageView
                     android:layout_width="14dp"
                     android:layout_height="14dp"
                     android:src="@drawable/ic_arrow_right"
-                    app:tint="#999999" />
+                    app:tint="?attr/colorOnSurfaceVariant" />
             </LinearLayout>
             <!-- Divider -->
-            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#EEEEEE" />
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="?attr/colorOutline" />
             <!-- Change Password -->
             <LinearLayout
                 android:id="@+id/change_password_layout"
@@ -108,24 +108,24 @@
                     android:layout_width="24dp"
                     android:layout_height="24dp"
                     android:src="@drawable/ic_lock"
-                    app:tint="@color/blue" />
+                    app:tint="?attr/colorPrimary" />
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:layout_marginStart="12dp"
                     android:text="Change Password"
-                    android:textColor="#000000"
+                    android:textColor="?attr/colorOnSurface"
                     android:textSize="14sp"
                     android:fontFamily="@font/poppins_regular" />
                 <ImageView
                     android:layout_width="14dp"
                     android:layout_height="14dp"
                     android:src="@drawable/ic_arrow_right"
-                    app:tint="#999999" />
+                    app:tint="?attr/colorOnSurfaceVariant" />
             </LinearLayout>
             <!-- Divider -->
-            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#EEEEEE" />
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="?attr/colorOutline" />
             <!-- Language Settings -->
             <LinearLayout
                 android:id="@+id/language_settings_layout"
@@ -138,24 +138,24 @@
                     android:layout_width="24dp"
                     android:layout_height="24dp"
                     android:src="@drawable/ic_language"
-                    app:tint="@color/blue" />
+                    app:tint="?attr/colorPrimary" />
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:layout_marginStart="12dp"
                     android:text="Language Settings"
-                    android:textColor="#000000"
+                    android:textColor="?attr/colorOnSurface"
                     android:textSize="14sp"
                     android:fontFamily="@font/poppins_regular" />
                 <ImageView
                     android:layout_width="14dp"
                     android:layout_height="14dp"
                     android:src="@drawable/ic_arrow_right"
-                    app:tint="#999999" />
+                    app:tint="?attr/colorOnSurfaceVariant" />
             </LinearLayout>
             <!-- Divider -->
-            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#EEEEEE" />
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="?attr/colorOutline" />
             <!-- Notification Preferences -->
             <LinearLayout
                 android:id="@+id/notification_prefs_layout"
@@ -168,24 +168,24 @@
                     android:layout_width="24dp"
                     android:layout_height="24dp"
                     android:src="@drawable/ic_notification"
-                    app:tint="@color/blue" />
+                    app:tint="?attr/colorPrimary" />
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:layout_marginStart="12dp"
                     android:text="Notification Preferences"
-                    android:textColor="#000000"
+                    android:textColor="?attr/colorOnSurface"
                     android:textSize="14sp"
                     android:fontFamily="@font/poppins_regular" />
                 <ImageView
                     android:layout_width="14dp"
                     android:layout_height="14dp"
                     android:src="@drawable/ic_arrow_right"
-                    app:tint="#999999" />
+                    app:tint="?attr/colorOnSurfaceVariant" />
             </LinearLayout>
             <!-- Divider -->
-            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#EEEEEE" />
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="?attr/colorOutline" />
             <!-- Logout Button -->
             <LinearLayout
                 android:id="@+id/logout_layout"
@@ -198,21 +198,21 @@
                     android:layout_width="24dp"
                     android:layout_height="24dp"
                     android:src="@drawable/ic_logout"
-                    app:tint="#FF0000" />
+                    app:tint="?attr/colorError" />
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:layout_marginStart="12dp"
                     android:text="Logout"
-                    android:textColor="#000000"
+                    android:textColor="?attr/colorOnSurface"
                     android:textSize="14sp"
                     android:fontFamily="@font/poppins_regular" />
                 <ImageView
                     android:layout_width="14dp"
                     android:layout_height="14dp"
                     android:src="@drawable/ic_arrow_right"
-                    app:tint="#999999" />
+                    app:tint="?attr/colorOnSurfaceVariant" />
             </LinearLayout>
         </LinearLayout>
         <!-- Alert Settings -->
@@ -227,7 +227,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Alert Settings"
-                android:textColor="#000000"
+                android:textColor="?attr/colorOnSurface"
                 android:textSize="16sp"
                 android:fontFamily="@font/poppins_medium"
                 android:layout_marginBottom="8dp" />
@@ -243,7 +243,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="Live Route Overviews"
-                    android:textColor="#000000"
+                    android:textColor="?attr/colorOnSurface"
                     android:textSize="14sp"
                     android:fontFamily="@font/poppins_regular" />
                 <Switch
@@ -263,7 +263,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="Petrol Station Notifications"
-                    android:textColor="#000000"
+                    android:textColor="?attr/colorOnSurface"
                     android:textSize="14sp"
                     android:fontFamily="@font/poppins_regular" />
                 <Switch
@@ -283,7 +283,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="Emergency Notifications"
-                    android:textColor="#000000"
+                    android:textColor="?attr/colorOnSurface"
                     android:textSize="14sp"
                     android:fontFamily="@font/poppins_regular" />
                 <Switch
@@ -303,7 +303,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="Sound Alerts"
-                    android:textColor="#000000"
+                    android:textColor="?attr/colorOnSurface"
                     android:textSize="14sp"
                     android:fontFamily="@font/poppins_regular" />
                 <Switch
@@ -325,7 +325,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="App Settings"
-                android:textColor="#000000"
+                android:textColor="?attr/colorOnSurface"
                 android:textSize="16sp"
                 android:fontFamily="@font/poppins_medium"
                 android:layout_marginBottom="8dp" />
@@ -341,21 +341,21 @@
                     android:layout_width="24dp"
                     android:layout_height="24dp"
                     android:src="@drawable/ic_location"
-                    app:tint="@color/blue" />
+                    app:tint="?attr/colorPrimary" />
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:layout_marginStart="12dp"
                     android:text="Location Services"
-                    android:textColor="#000000"
+                    android:textColor="?attr/colorOnSurface"
                     android:textSize="14sp"
                     android:fontFamily="@font/poppins_regular" />
                 <ImageView
                     android:layout_width="14dp"
                     android:layout_height="14dp"
                     android:src="@drawable/ic_arrow_right"
-                    app:tint="#999999" />
+                    app:tint="?attr/colorOnSurfaceVariant" />
             </LinearLayout>
             <!-- Data Usage -->
             <LinearLayout
@@ -369,21 +369,21 @@
                     android:layout_width="24dp"
                     android:layout_height="24dp"
                     android:src="@drawable/ic_data"
-                    app:tint="@color/blue" />
+                    app:tint="?attr/colorPrimary" />
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:layout_marginStart="12dp"
                     android:text="Data Usage"
-                    android:textColor="#000000"
+                    android:textColor="?attr/colorOnSurface"
                     android:textSize="14sp"
                     android:fontFamily="@font/poppins_regular" />
                 <ImageView
                     android:layout_width="14dp"
                     android:layout_height="14dp"
                     android:src="@drawable/ic_arrow_right"
-                    app:tint="#999999" />
+                    app:tint="?attr/colorOnSurfaceVariant" />
             </LinearLayout>
             <!-- Privacy Settings -->
             <LinearLayout
@@ -397,21 +397,21 @@
                     android:layout_width="24dp"
                     android:layout_height="24dp"
                     android:src="@drawable/ic_privacy"
-                    app:tint="@color/blue" />
+                    app:tint="?attr/colorPrimary" />
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:layout_marginStart="12dp"
                     android:text="Privacy Settings"
-                    android:textColor="#000000"
+                    android:textColor="?attr/colorOnSurface"
                     android:textSize="14sp"
                     android:fontFamily="@font/poppins_regular" />
                 <ImageView
                     android:layout_width="14dp"
                     android:layout_height="14dp"
                     android:src="@drawable/ic_arrow_right"
-                    app:tint="#999999" />
+                    app:tint="?attr/colorOnSurfaceVariant" />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>

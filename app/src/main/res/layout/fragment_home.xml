@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/md_theme_light_background">
+    android:background="?android:colorBackground">
 
     <LinearLayout
         android:id="@+id/location_input_container"
@@ -36,8 +36,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:hint="Current Location"
-                android:textColor="#6F6F6F"
-                android:textColorHint="#6F6F6F"
+                android:textColor="?attr/colorOnSurfaceVariant"
+                android:textColorHint="?attr/colorOnSurfaceVariant"
                 android:textSize="16sp"
                 android:layout_marginStart="8dp"
                 android:fontFamily="@font/poppins_regular"
@@ -53,7 +53,7 @@
                 android:src="@drawable/ic_clear"
                 android:contentDescription="Clear Current Location"
                 android:visibility="gone"
-                app:tint="#6B7280" />
+                app:tint="?attr/colorOnSurfaceVariant" />
         </LinearLayout>
 
         <View
@@ -82,8 +82,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:hint="Enter Destination"
-                android:textColor="#6F6F6F"
-                android:textColorHint="#6F6F6F"
+                android:textColor="?attr/colorOnSurfaceVariant"
+                android:textColorHint="?attr/colorOnSurfaceVariant"
                 android:textSize="16sp"
                 android:layout_marginStart="8dp"
                 android:fontFamily="@font/poppins_regular"
@@ -99,7 +99,7 @@
                 android:src="@drawable/ic_clear"
                 android:contentDescription="Clear Destination"
                 android:visibility="gone"
-                app:tint="#6B7280" />
+                app:tint="?attr/colorOnSurfaceVariant" />
         </LinearLayout>
     </LinearLayout>
 
@@ -121,7 +121,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:background="@color/md_theme_light_surfaceVariant"
+            android:background="?attr/colorSurfaceVariant"
             android:visibility="visible">
 
             <View
@@ -138,7 +138,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="No internet connection"
-            android:textColor="#FF3333"
+            android:textColor="?attr/colorError"
             android:textSize="16sp"
             android:fontFamily="@font/poppins_medium"
             android:background="@color/rp_sky"
@@ -180,12 +180,14 @@
                 android:layout_height="35dp"
                 android:padding="9dp"
                 android:background="@drawable/roundbg"
-                android:src="@drawable/ic_recenter"/>
+                android:src="@drawable/ic_recenter"
+                app:tint="?attr/colorOnPrimary"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Recenter"
                 android:textSize="12sp"
+                android:textColor="?attr/colorOnSurface"
                 android:fontFamily="@font/poppins_medium"/>
         </LinearLayout>
 
@@ -204,12 +206,14 @@
                 android:layout_height="35dp"
                 android:padding="9dp"
                 android:background="@drawable/roundbg"
-                android:src="@drawable/ic_layers"/>
+                android:src="@drawable/ic_layers"
+                app:tint="?attr/colorOnPrimary"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Layers"
                 android:textSize="12sp"
+                android:textColor="?attr/colorOnSurface"
                 android:fontFamily="@font/poppins_medium"/>
         </LinearLayout>
 
@@ -229,12 +233,13 @@
                 android:padding="10dp"
                 android:background="@drawable/roundbg"
                 android:src="@drawable/ic_gas_station"
-                app:tint="#FF4B5563"/>
+                app:tint="?attr/colorOnPrimary"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Gas"
                 android:textSize="12sp"
+                android:textColor="?attr/colorOnSurface"
                 android:fontFamily="@font/poppins_medium"/>
         </LinearLayout>
 
@@ -254,12 +259,13 @@
                 android:padding="9dp"
                 android:background="@drawable/roundbg"
                 android:src="@drawable/ic_warning"
-                app:tint="#FF4B5563"/>
+                app:tint="?attr/colorOnPrimary"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Emergency"
                 android:textSize="12sp"
+                android:textColor="?attr/colorOnSurface"
                 android:fontFamily="@font/poppins_medium"/>
         </LinearLayout>
     </LinearLayout>
@@ -275,7 +281,7 @@
         app:tabIndicatorColor="@color/rp_teal"
         app:tabIndicatorHeight="2dp"
         app:tabSelectedTextColor="@color/rp_teal"
-        app:tabTextColor="#6B7280"
+        app:tabTextColor="?attr/colorOnSurfaceVariant"
         app:tabTextAppearance="@style/TabTextStyle"/>
 
     <androidx.viewpager2.widget.ViewPager2
@@ -286,6 +292,6 @@
         android:layout_alignParentBottom="true"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="10dp"
-        android:background="@color/md_theme_light_surfaceVariant"/>
+        android:background="?attr/colorSurfaceVariant"/>
 
 </RelativeLayout>

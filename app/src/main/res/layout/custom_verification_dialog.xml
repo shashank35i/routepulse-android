@@ -36,7 +36,7 @@
         android:text="Verification email sent. Please check your\n inbox/spam."
 
         android:fontFamily="sans-serif-medium"
-        android:textColor="#000000"
+        android:textColor="?attr/colorOnSurface"
         android:textSize="16sp"
         android:gravity="center" />
 

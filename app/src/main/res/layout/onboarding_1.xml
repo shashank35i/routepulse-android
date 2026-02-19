@@ -4,7 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/md_theme_light_background">
+    android:background="?android:colorBackground">
 
     <!-- Center Icon -->
     <ImageView
@@ -29,7 +29,7 @@
         android:layout_marginTop="24dp"
         android:layout_marginHorizontal="32dp"
         android:text="Find Nearby Petrol\nStations"
-        android:textColor="@color/md_theme_light_onSurface"
+        android:textColor="?attr/colorOnSurface"
         android:textSize="22sp"
         android:fontFamily="@font/poppins_bold"
         android:gravity="center"
@@ -46,7 +46,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginHorizontal="32dp"
         android:text="Never worry about running out of fuel. Locate the nearest petrol stations instantly, with real-time availability updates."
-        android:textColor="@color/md_theme_light_onSurfaceVariant"
+        android:textColor="?attr/colorOnSurfaceVariant"
         android:textSize="16sp"
         android:fontFamily="@font/poppins_regular"
         android:gravity="center"
@@ -107,7 +107,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="Skip"
-        android:textColor="@color/md_theme_light_onSurfaceVariant"
+        android:textColor="?attr/colorOnSurfaceVariant"
         android:textSize="16sp"
         android:fontFamily="@font/poppins_regular"
         app:layout_constraintTop_toBottomOf="@id/continueBtn"

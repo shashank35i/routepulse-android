@@ -38,7 +38,7 @@
         android:layout_marginEnd="12dp"
         android:layout_marginTop="12dp"
         android:layout_marginBottom="16dp"
-        android:background="@color/md_theme_light_surface">
+        android:background="?attr/colorSurface">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -74,7 +74,7 @@
                 android:textSize="22sp"
 
                 android:letterSpacing="0.01"
-                android:textColor="#0D1333"
+                android:textColor="?attr/colorOnSurface"
                 android:gravity="center"
                 app:layout_constraintTop_toBottomOf="@id/illusFrame"
                 app:layout_constraintStart_toStartOf="parent"
@@ -88,7 +88,7 @@
                 android:layout_height="wrap_content"
                 android:text="Real-time heavy-traffic alerts • Hospital priority routing • Fuel station filters — ad-free"
                 android:textSize="14sp"
-                android:textColor="#4B5268"
+                android:textColor="?attr/colorOnSurfaceVariant"
                 android:gravity="center"
                 android:lineSpacingExtra="2dp"
                 app:layout_constraintTop_toBottomOf="@id/tvHeadline"
@@ -119,14 +119,14 @@
                         android:layout_height="20dp"
                         android:src="@drawable/ic_check"
                         android:contentDescription=""
-                        app:tint="#2E7D32" />
+                        app:tint="?attr/colorSecondary" />
 
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Priority traffic routing"
-                        android:textColor="#374151"
+                        android:textColor="?attr/colorOnSurfaceVariant"
                         android:textSize="14sp"
                         android:layout_marginStart="10dp"/>
                 </LinearLayout>
@@ -143,14 +143,14 @@
                         android:layout_height="20dp"
                         android:src="@drawable/ic_check"
                         android:contentDescription=""
-                        app:tint="#2E7D32" />
+                        app:tint="?attr/colorSecondary" />
 
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Nearby hospitals &amp; fast routing"
-                        android:textColor="#374151"
+                        android:textColor="?attr/colorOnSurfaceVariant"
                         android:textSize="14sp"
                         android:layout_marginStart="10dp"/>
                 </LinearLayout>
@@ -167,14 +167,14 @@
                         android:layout_height="20dp"
                         android:src="@drawable/ic_check"
                         android:contentDescription=""
-                        app:tint="#2E7D32" />
+                        app:tint="?attr/colorSecondary" />
 
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Ad-free &amp; instant updates"
-                        android:textColor="#374151"
+                        android:textColor="?attr/colorOnSurfaceVariant"
                         android:textSize="14sp"
                         android:layout_marginStart="10dp"/>
                 </LinearLayout>
@@ -188,7 +188,7 @@
                 android:text="• Cancel anytime"
                 android:textSize="12sp"
 
-                android:textColor="#FF8F00"
+                android:textColor="?attr/colorTertiary"
                 android:paddingLeft="10dp"
                 android:paddingRight="10dp"
 
@@ -236,7 +236,7 @@
             android:layout_height="48dp"
             android:text="Maybe later"
             android:textSize="15sp"
-            android:textColor="#1565C0"
+            android:textColor="?attr/colorPrimary"
             android:gravity="center"
             android:padding="8dp"
             android:clickable="true"

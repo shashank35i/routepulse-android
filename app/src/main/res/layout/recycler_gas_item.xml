@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
-    android:background="#F7F8FA"
+    android:background="?attr/colorSurfaceVariant"
     android:padding="12dp"
     android:layout_marginBottom="4dp"
 
@@ -17,7 +17,7 @@
         android:layout_width="20dp"
         android:layout_height="20dp"
         android:src="@drawable/ic_gas_station"
-        app:tint="#4CAF50"
+        app:tint="?attr/colorSecondary"
         android:layout_marginEnd="8dp"/>
 
     <LinearLayout
@@ -32,7 +32,7 @@
             android:layout_height="wrap_content"
             android:text="Shell Station"
             android:textSize="14sp"
-            android:textColor="#000000"
+            android:textColor="?attr/colorOnSurface"
             android:fontFamily="@font/poppins_medium"/>
 
         <TextView
@@ -41,7 +41,7 @@
             android:layout_height="wrap_content"
             android:text="123 Main St"
             android:textSize="12sp"
-            android:textColor="#555555"
+            android:textColor="?attr/colorOnSurfaceVariant"
             android:layout_marginTop="2dp"
             android:fontFamily="@font/poppins_regular"/>
 
@@ -51,7 +51,7 @@
             android:layout_height="wrap_content"
             android:text="1.0 mi"
             android:textSize="12sp"
-            android:textColor="#555555"
+            android:textColor="?attr/colorOnSurfaceVariant"
             android:layout_marginTop="2dp"
             android:fontFamily="@font/poppins_regular"/>
     </LinearLayout>
@@ -62,6 +62,6 @@
         android:layout_height="wrap_content"
         android:text="Open 24/7"
         android:textSize="12sp"
-        android:textColor="#4CAF50"
+        android:textColor="?attr/colorSecondary"
         android:fontFamily="@font/poppins_regular"/>
 </LinearLayout>

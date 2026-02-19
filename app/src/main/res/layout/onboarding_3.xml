@@ -4,7 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/md_theme_light_background">
+    android:background="?android:colorBackground">
 
     <!-- Image Container with Rounded Corners -->
     <androidx.cardview.widget.CardView
@@ -15,7 +15,7 @@
         android:layout_marginTop="80dp"
         app:cardCornerRadius="24dp"
         app:cardElevation="0dp"
-        app:cardBackgroundColor="#F5F8FF"
+        app:cardBackgroundColor="?attr/colorSurfaceVariant"
         app:layout_constraintWidth_percent="0.75"
         app:layout_constraintHeight_percent="0.35"
         app:layout_constraintTop_toTopOf="parent"
@@ -65,7 +65,7 @@
         android:layout_marginTop="24dp"
         android:layout_marginHorizontal="32dp"
         android:text="Get Smarter Routes,\nSave Time and Fuel"
-        android:textColor="@color/md_theme_light_onSurface"
+        android:textColor="?attr/colorOnSurface"
         android:textSize="22sp"
         android:fontFamily="@font/poppins_bold"
         android:gravity="center"
@@ -82,7 +82,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginHorizontal="32dp"
         android:text="Our AI-powered system analyzes real-time traffic data to suggest the most efficient routes, helping you avoid congestion and reduce fuel consumption."
-        android:textColor="@color/md_theme_light_onSurfaceVariant"
+        android:textColor="?attr/colorOnSurfaceVariant"
         android:textSize="16sp"
         android:fontFamily="@font/poppins_regular"
         android:gravity="center"

@@ -6,12 +6,12 @@
 
     <!-- Light gray background -->
     <path
-        android:fillColor="#E0E0E0"
+        android:fillColor="?attr/colorSurfaceVariant"
         android:pathData="M0,0h300v180h-300z"/>
 
     <!-- Grid lines -->
     <path
-        android:strokeColor="#CCCCCC"
+        android:strokeColor="?attr/colorOutline"
         android:strokeWidth="1"
         android:pathData="
             M0,30h300
@@ -26,7 +26,7 @@
 
     <!-- Location pin icon -->
     <path
-        android:fillColor="#B0BEC5"
+        android:fillColor="?attr/colorOnSurfaceVariant"
         android:pathData="M150,60c-11,0 -20,9 -20,20 0,15 20,40 20,40s20,-25 20,-40c0,-11 -9,-20 -20,-20z"/>
 
 </vector>

@@ -4,7 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/md_theme_light_background">
+    android:background="?android:colorBackground">
 
     <!-- Top Bar -->
     <ImageView
@@ -25,7 +25,7 @@
         android:layout_height="wrap_content"
         android:text="Live Route Overview"
         android:textSize="18sp"
-        android:textColor="#000000"
+        android:textColor="?attr/colorOnSurface"
         android:fontFamily="@font/poppins_bold"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toEndOf="@id/backButton"
@@ -73,7 +73,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:visibility="gone"
-                android:background="#F5F5F5"
+                android:background="?attr/colorSurfaceVariant"
                 android:padding="12dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginStart="16dp"
@@ -87,7 +87,7 @@
                     android:layout_height="wrap_content"
                     android:text="Destination: --"
                     android:textSize="16sp"
-                    android:textColor="#000000"
+                    android:textColor="?attr/colorOnSurface"
                     android:fontFamily="@font/poppins_bold"/>
 
                 <TextView
@@ -96,7 +96,7 @@
                     android:layout_height="wrap_content"
                     android:text="Distance: --"
                     android:textSize="14sp"
-                    android:textColor="#555555"
+                    android:textColor="?attr/colorOnSurfaceVariant"
                     android:layout_marginTop="4dp"
                     android:fontFamily="@font/poppins_regular"/>
             </LinearLayout>
@@ -107,7 +107,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:background="#FFF6E5"
+                android:background="?attr/colorTertiaryContainer"
                 android:padding="16dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginStart="16dp"
@@ -125,7 +125,7 @@
                         android:layout_width="20dp"
                         android:layout_height="20dp"
                         android:src="@drawable/ic_warning"
-                        app:tint="#F57C00" />
+                        app:tint="?attr/colorTertiary" />
 
                     <TextView
                         android:id="@+id/status_text"
@@ -133,7 +133,7 @@
                         android:layout_height="wrap_content"
                         android:text="Heavy Traffic Ahead"
                         android:textSize="16sp"
-                        android:textColor="#000000"
+                        android:textColor="?attr/colorOnSurface"
                         android:layout_marginStart="8dp"
                         android:fontFamily="@font/poppins_bold"/>
                 </LinearLayout>
@@ -144,7 +144,7 @@
                     android:layout_height="wrap_content"
                     android:text="Within 5km of your location"
                     android:textSize="14sp"
-                    android:textColor="#555555"
+                    android:textColor="?attr/colorOnSurfaceVariant"
                     android:layout_marginTop="4dp"
                     android:fontFamily="@font/poppins_regular"/>
 
@@ -155,8 +155,8 @@
                     android:text="  Active Alert"
                     android:drawableStart="@drawable/dot_active"
                     android:textSize="14sp"
-                    android:drawableTint="#FF3B30"
-                    android:textColor="#FF3B30"
+                    android:drawableTint="?attr/colorError"
+                    android:textColor="?attr/colorError"
                     android:layout_marginTop="4dp"
                     android:fontFamily="@font/poppins_medium"/>
             </LinearLayout>
@@ -178,7 +178,7 @@
                 android:layout_height="wrap_content"
                 android:text="Alternative Routes"
                 android:textSize="16sp"
-                android:textColor="#000000"
+                android:textColor="?attr/colorOnSurface"
                 android:layout_marginTop="16dp"
                 android:layout_marginStart="16dp"
                 android:fontFamily="@font/poppins_bold"/>
@@ -200,7 +200,7 @@
                 android:layout_height="wrap_content"
                 android:text="Nearby Petrol Stations"
                 android:textSize="16sp"
-                android:textColor="#000000"
+                android:textColor="?attr/colorOnSurface"
                 android:layout_marginTop="16dp"
                 android:layout_marginStart="16dp"
                 android:fontFamily="@font/poppins_bold"/>
@@ -222,7 +222,7 @@
                 android:layout_height="wrap_content"
                 android:text="Nearby Hospitals"
                 android:textSize="16sp"
-                android:textColor="#000000"
+                android:textColor="?attr/colorOnSurface"
                 android:layout_marginTop="16dp"
                 android:layout_marginStart="16dp"
                 android:fontFamily="@font/poppins_bold"/>
@@ -247,7 +247,7 @@
         android:layout_height="58dp"
         android:text="Start Navigation"
         android:textColor="@color/white"
-        android:backgroundTint="#2979FF"
+        android:backgroundTint="?attr/colorPrimary"
         android:layout_margin="16dp"
         android:fontFamily="@font/poppins_medium"
         app:cornerRadius="6dp"

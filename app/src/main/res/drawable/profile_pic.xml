@@ -2,7 +2,7 @@
     <!-- Background circle -->
     <item>
         <shape android:shape="oval">
-            <solid android:color="#DDDDDD"/>
+            <solid android:color="?attr/colorSurfaceVariant"/>
             <!-- Optional: Add size to constrain the shape, but this is typically handled by the view -->
             <size android:width="60dp" android:height="60dp"/>
         </shape>
